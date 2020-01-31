@@ -1,0 +1,296 @@
+*{margin: 0;
+padding: 0;
+list-style: none;
+text-decoration: none;
+box-sizing: border-box;
+}
+@import 'fonts.css';
+:root{--col-1:calc(100%/12*1);
+  --col-2:calc(100%/12*2);
+  --col-3:calc(100%/12*3);
+  --col-4:calc(100%/12*4);
+  --col-5:calc(100%/12*5);
+  --col-6:calc(100%/12*6);
+  --col-7:calc(100%/12*7);
+  --col-8:calc(100%/12*8);
+  --col-9:calc(100%/12*9);
+  --col-10:calc(100%/12*10);
+  --col-11:calc(100%/12*11);
+  --col-12:calc(100%/12*12);
+  --f300:'Roboto Light';
+  --f400:'Roboto Regular';
+  --f700:'Roboto Bold';
+--main-color:#70869d;
+
+
+
+}
+.col-6{
+  width: var(--col-6);
+}
+.col-3{
+  width: var(--col-3);
+}
+.d-flex{
+display: flex;
+}
+.justify-between{
+justify-content: space-between;
+}
+.align-center{
+  align-items: center;
+}
+.justify-left{
+  justify-content: left;
+}
+.col-12{
+  width: var(--col-12);
+}
+.justify-evenly{
+justify-content: space-evenly;
+}
+
+header{
+    background: url(../images/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+}
+  header .head-container{max-width: 1110px;
+     width: 100%;
+
+ }
+  .head-container h1{
+    text-align: left;
+   font-family: var(--f700);
+    font-size: 50px;
+    color: var(--main-color);
+    margin-top: 292px;
+    margin-bottom: 50px;
+    padding-left: 250px;
+
+}
+  .head-container h2 {
+    text-align: left;
+    font-family:var(--f700);
+    font-size: 70px;
+    color: #404040;
+padding-left: 250px;
+align-items: center;
+
+}
+main{
+  padding: 100px 0;
+}
+
+ .top-container{ max-width:1110px;
+  width: 100%;
+  margin: 0px auto;
+  /* text-align: center; */
+}
+   .item-top{ 
+   display: flex;
+   margin: 50px 0px;
+ }
+  .text{
+  margin-left: 32px;
+
+}
+  .text h3{
+  display: flex;
+  font-family: var(--f700);
+  font-size: 25px;
+  color: #1f3750;
+}
+
+.text p{
+  font-family: var(--f300);
+  font-size: 16px;
+  color: var(--main-color);
+}
+.text a{
+ display: block;
+  color: var(--main-color); 
+  font-family:var(--f300) ;
+  font-size: 16px;
+  text-align: center;
+  background: #f2f2f2;
+  padding: 13px 47px;
+}
+.text a:hover{
+  color: #ffffff;
+  background: #0092b6;
+}
+.bottom-container{max-width: 1110px;
+  margin: 0px auto;
+width: 100%;
+}
+.low-item{
+  display: flex;
+  margin: 50px 0;
+}
+.row-cont{
+  max-width: 1110px;
+  width: 100%;
+  margin: 100px auto;
+  background: #f3f9ff;
+}
+.row{
+  max-width: 1110px;
+  width: 100%;
+  margin: 50px 0;
+}
+.row img{
+  margin: 36px 0;
+}
+.row a{
+  margin-top: 26px 0;
+  font-family: var(--f700);
+  font-size: 18px;
+  color: #1f3750;
+}
+.row h4{
+  font-family: var(--f700);
+  font-size: 20px;
+  color: #1f3750;
+}
+.row p{font-family: var(--f700);
+  font-size: 16px;
+  color: var(--main-color);
+
+}
+main h4{
+  text-align: center;
+  font-family: var(--f700);
+  font-size: 18px;
+  color: #1f3750;
+  margin: 53px 0;
+}
+
+.point-cont{
+  margin: 119px 20px;
+
+}
+.point{margin-top: 0;
+  max-width: 341px;
+  width: 100%;
+
+}
+.point ul li a{
+  font-family: var(--f400);
+  font-size: 18px;
+  color: var(--main-color);
+
+}
+.point ul li a:hover{
+  color: #0092b6;
+}
+footer{
+  background: #f3f9ff;
+  height: 150px;
+  width: 100%;
+}
+nav{
+  max-width: 1110px;
+  margin: 0 auto;
+  width: 100%;
+  flex-wrap:wrap;
+}
+ 
+nav ul li a{
+  display: block;
+  padding: 46px 17px 46px 17px;
+  font-family: var(--f400);
+  font-size: 16px;
+  color: #6d6d6d;
+  
+
+}
+nav a{
+  font-family: var(--f700);
+  font-size: 18px;
+  color: #444444;
+}
+@media(max-width:920px){
+  header{
+    width: 100%;
+    
+  }
+  .head-container{
+    margin: 0 auto;
+  }
+  .top-container{
+    flex-wrap: wrap;
+    
+  }
+  .item-top{
+    width: 100%;
+  }
+  .low-item{
+    width: 100%;
+  }
+  .bottom-container{
+    flex-wrap: wrap;
+  }
+  .text a{margin-top: 30px;
+    width: 50%;
+
+  }
+.text p{
+  text-align: left;
+  margin-top: 20px;
+}
+}
+@media(max-width:800px){
+  header{
+    width: 100%;
+  }
+.row-cont{
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.row{
+  margin: 0 auto;
+}
+.row img{display: flex;
+  margin: 0 auto;
+}
+.row h4{
+  text-align: center;
+}
+.row p{margin-top: 20px;
+  text-align: center;
+}
+.row a{
+  text-align: center;
+  margin-top: 10px;
+  margin: 0 auto;
+}
+nav a{
+  display: inline;
+  text-align: center;
+}
+nav ul{display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.nav{
+  width: 100%;
+}
+.text a{
+  width: 100%;
+}
+.point-cont{
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+.point{
+  width: 100%;
+}
+.point:nth-child(2){
+  margin-top: 20px;
+}
+}
